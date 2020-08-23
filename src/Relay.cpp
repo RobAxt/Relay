@@ -39,3 +39,9 @@ void Relay::turnOff(){
 	}
 	digitalWrite(pin, state);
 }
+void Relay::toggle(){
+	if(!getState())
+		turnOn();
+	else
+		turnOff();
+}

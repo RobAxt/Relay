@@ -3,7 +3,7 @@
 #ifndef _RELAY_h
 #define _RELAY_h
 
-#include "Arduino.h"
+#include <Arduino.h>
   
 class Relay
 {
@@ -19,6 +19,7 @@ class Relay
 	 bool getState();
 	 void turnOn();
 	 void turnOff();
+	 void toggle();
 };
 
 #endif
